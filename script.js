@@ -8,25 +8,25 @@ function verificarPar(numero) {
     }
 }
 
-verificarPar(4); 
+verificarPar(4);
 verificarPar(7);
 
 
 // 2º calculadora
 
-function calcularNumero (numero1, numero2) {
+function calcularNumero(numero1, numero2) {
     console.log(numero1 + numero2);
     console.log(numero1 - numero2);
     console.log(numero1 * numero2);
-    console.log(numero2 !== 0 ? numero1 / numero2: 'Não pode fazer dividir por zero');
+    console.log(numero2 !== 0 ? numero1 / numero2 : 'Não pode fazer dividir por zero');
 }
 
-calcularNumero (10,3)
+calcularNumero(10, 3)
 
 // 3º  contagem regressiva 
 
 for (let i = 10; i > 0; i--) {
-    console.log (i)
+    console.log(i)
 }
 
 // forma com while - professor ensinando
@@ -34,9 +34,14 @@ for (let i = 10; i > 0; i--) {
 let numero = 10;
 let delay = 0;
 
-while (numero >=1){
-        console.log(numero);
+while (numero >= 1) {
+    console.log(numero);
 
     numero--;
 }
 
+// Inverter texto
+
+let original = "JavaScript";
+let invertido = original.split("").reverse().join("");
+console.log(invertido);
